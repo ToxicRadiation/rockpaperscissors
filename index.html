@@ -3,12 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pro game</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+        .choices {
+            margin-bottom: 30px;
+        }
+        button {
+            font-size: 18px;
+            padding: 12px 24px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #display-box {
+            border: 2px solid #ccc;
+            padding: 20px;
+            max-width: 450px;
+            margin: 0 auto;
+            min-height: 150px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <h1>Rock, Paper, Scissors</h1>
+    <p>First to 5 points = win</p>
+
+    <div class="choices">
+        <button id="rock">🪨 Rock</button>
+        <button id="paper">📄 Paper</button>
+        <button id="scissors">✂️ Scissors</button>
+    </div>
+
+    <div id="display-box">
+        <p>Make your move to start game.</p>
+    </div>
+
+    <script src="functionality.js"></script>
 </body>
-
-<script src="script.js"></script>
-
 </html>
